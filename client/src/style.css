@@ -1,0 +1,77 @@
+:root{
+    --Dark-Blue: #060640;
+    --Pale-blue: #effafd;
+    --Royale-blue: #4A8BDF;
+    --Eggplant: #A0006D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login{
+    min-height: 100vh;
+    padding: 100px 25px;
+    background-image: url('/images/LoginWallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.form--login{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.form--login p{
+    color: white;
+    font-weight: 500;
+}
+
+.login--container{
+    padding: 25px;
+    border-radius: 15px;
+    background: #effafd4d;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8);
+    -webkit-backdrop-filter: blur(5.8px);
+}
+
+.login--switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.btt--profesor, .btt--ucenik, .form--login input[type='submit'],.form--login input[type='email'], .form--login input[type='password']{
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    padding: 5px 0;
+    background: white;
+    border: 1px solid var(--Dark-Blue);
+    color: var(--Dark-Blue);
+}
+
+.form--login input[type='submit']{
+    background: var(--Dark-Blue);
+    border-color: transparent;
+    color: white;
+    margin-top: 15px;
+}
+
+.form--login input[type='email'], .form--login input[type='password']{
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 10px;
+}
