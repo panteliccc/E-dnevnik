@@ -15,7 +15,7 @@
 .login{
     min-height: 100vh;
     padding: 100px 25px;
-    background-image: url('/images/LoginWallpaper.jpg');
+    background-image: url('./images/LoginWallpaper.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
