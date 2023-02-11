@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+
 const routes = require('./Routes/Route')
 
 require("dotenv").config();
@@ -18,6 +19,6 @@ mongoose.connect(process.env.MONGO_URL)
         .catch((e)=>{
             console.log(e);
         })
-app.use(routes);
 
+app.use(routes)
 app.listen(PORT , ()=> console.log(`Lisening on port ${PORT}`))

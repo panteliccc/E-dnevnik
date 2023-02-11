@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const logInSchema=new mongoose.Schema({
+const User=new mongoose.Schema({
     email:{
         type:String,
         required:true
@@ -11,6 +11,6 @@ const logInSchema=new mongoose.Schema({
     }
 })
 
-const Users=new mongoose.model('Users',logInSchema)
+const Users=new mongoose.model('Users',User)
 
 module.exports=Users
